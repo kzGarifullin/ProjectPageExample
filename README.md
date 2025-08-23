@@ -6,6 +6,7 @@
 
 
 >Abstract / High-level summary of your project.
+
 Provide a concise overview of your project, summarizing the problem it addresses, the methodology employed, and its key contributions in 2–3 sentences. You may use text from the corresponding article if applicable.
 >
 
