@@ -19,68 +19,63 @@
 ## Prerequisites
 
 To run our method, please ensure you meet the following hardware and software requirements:
-- Operating System: Linux / macOS / Windows
-- GPU: NVIDIA (e.g., A100 / V100 and shiuld be specified RAM size, e.g. V100 with 40GB RAM) [optional] 
-- Python Version: >= 3.8
-- PyTorch Version: >= 2.0.1
-- Diffusers Version: >= 0.29.1
+- **Operating System**: Linux / macOS / Windows
+- **GPU**: NVIDIA (e.g., A100 / V100 and shiuld be specified RAM size, e.g. V100 with 40GB RAM) [optional] 
+- **Python**: >= 3.8
+- Frameworks/Libraries:
+- PyTorch >= 2.0
+- Diffusers >= 0.29
 - Others: requirements.txt
+
 
 ## Setup
 
-* Clone this repo:
+* Clone repository:
 ```bash
-git clone https://github.com/ControlGenAI/MaterialFusion.git
-cd MaterialFusion
+git clone https://github.com/YourOrg/ProjectName.git
+cd ProjectName
 ```
 
-* Download IP-Adapter:
+* Create environment (conda example)::
+```bash
+conda env create -f environment.yaml
+conda activate project_env
+```
+
+*(Optional) Download required models/data:
 ```bash
 git lfs install
-git clone https://huggingface.co/h94/IP-Adapter
+git clone https://huggingface.co/YourModel/Weights
 ```
 
-* Setup the environment. Conda environment `material_fusion` will be created and you can use it.
+## Inference / Usage
 ```bash
-conda env create -f material_fusion_env.yaml
+python main.py --param1 value1 --param2 value2
 ```
 
-## Inference
+### Key Parameters
 
-You can use the `main.py` script to perform inference with the model. This allows you to generate visual outputs based on the provided prompts and parameters.
+ - `input_path`: Path to input image/data
+ - `output_path`: Directory to save results
+ - `prompt`: Text description for generation/editing
+ - `config`: Path to config file (e.g., configs/default.yaml)
 
-### Parameters 
+### Example command:
 
-- `init_prompt`: A text description of the content in the original image (e.g. "A photo of a car").
-- `edit_prompt`: A text description of what you expect in the output image (e.g. "A photo of a golden car"). It is possible to use  $y_{src}$  instead of  $y_{trg}$ . Material transfer is successful regardless of whether the target prompt is present or not(i.e. when  $y_{trg}=y_{src}$ ). However, the presence of the target prompt facilitates easier material transfer.
-- `transfer_force`: The strength of the transfer effects applied, specified as a space-separated list of floats (e.g., "0.1 0.5 0.8 1.0").
-- `obj_name`: The name of the object, which is used for naming the output images (e.g. "car").
-- `obj_path`: The file path to the image of the object (e.g. `./example_images/objects/car.png`).
-- `material_image_path`: The path to the material image(e.g. `./example_images/materials/4.jpg`).
-- `config_path`: The path to the configuration file used for the model (e.g. `./configs/materialfusion_colab.yaml`). For transferring in Colab, the colab configuration works well; however, if your hardware allows, it's better to use the 'best' configuration. 
-
-### Here’s an example of how to perform inference:
-```
-init_prompt="A photo of a car"                            
-edit_prompt="A photo of a car"                            
-transfer_force="0.1 0.5 0.8 1.0"                          
-obj_name="car"                                            
-obj_path="./example_images/objects/car.png"              
-material_image_path="./example_images/materials/4.jpg"   
-config_path='./configs/materialfusion_colab.yaml' 
-
-python main.py --init_prompt "$init_prompt" \
---edit_prompt "$edit_prompt" \
---transfer_force "$transfer_force" \
---obj_name "$obj_name" \
---obj_path "$obj_path" \
---material_image_path "$material_image_path" \
---config "$config_path"
+```bash
+python main.py --input_path ./examples/input.png \
+--output_path ./results/ \
+--prompt "A photo of a golden retriever" \
+--config ./configs/default.yaml
 ```
 
 ## Quickstart
 
 We provide examples of applying our pipeline to real image editing in the [notebook](example_notebooks/material_transfer.ipynb).
+
+- Example Jupyter Notebook: [examples/demo.ipynb](example_notebooks/material_transfer.ipynb)
+- Pretrained models & sample datasets available [here](example_notebooks/material_transfer.ipynb)
+
 
 ## Method Diagram
 <p align="center">
