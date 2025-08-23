@@ -2,6 +2,7 @@
 
 <a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv-2502.06606-b31b1b.svg" height=22.5></a>
 <a href="https://colab.research.google.com/"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
+<a href="https://controlgenai.github.io/InnerControl/"><img src="https://img.shields.io/badge/Project-Website-blue" height=22.5><a>
 [![License](https://img.shields.io/github/license/AIRI-Institute/al_toolbox)](./LICENSE)
 
 
