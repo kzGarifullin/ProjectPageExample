@@ -5,26 +5,26 @@
 [![License](https://img.shields.io/github/license/AIRI-Institute/al_toolbox)](./LICENSE)
 
 
->Abstract / High-level summary of your project.
-
-Provide a concise overview of your project, summarizing the problem it addresses, the methodology employed, and its key contributions in 2–3 sentences. You may use text from the corresponding article if applicable.
+>Abstract / High-level summary of your project. Provide a concise overview of your project, summarizing the problem it addresses, the methodology employed, and its key contributions in 2–3 sentences. You may use text from the corresponding article if applicable.
 >
 
 ![image](docs/teaser.JPG)
 
 ## Updates
 
-- [27/02/2025] 🎉🎉🎉 MaterialFusion has been accepted by CVPR 2025.
-- [09/02/2025] 🔥🔥🔥 MaterialFusion release.
+- [DD/MM/YYYY] 🎉 Initial release of ProjectName.
+- [DD/MM/YYYY] 🚀 Added feature X.
+- [DD/MM/YYYY] 📄 Paper accepted at [Conference/Journal].
 
 ## Prerequisites
 
 To run our method, please ensure you meet the following hardware and software requirements:
-- Operating System: Linux
-- GPU: NVIDIA V100 with 40GB RAM
-- Python Version: 3.8.5
-- PyTorch Version: 2.0.1
-- Diffusers Version: 0.29.1
+- Operating System: Linux / macOS / Windows
+- GPU: NVIDIA (e.g., A100 / V100 and shiuld be specified RAM size, e.g. V100 with 40GB RAM) [optional] 
+- Python Version: >= 3.8
+- PyTorch Version: >= 2.0.1
+- Diffusers Version: >= 0.29.1
+- Others: requirements.txt
 
 ## Setup
 
