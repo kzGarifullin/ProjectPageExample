@@ -1,4 +1,4 @@
-# ProjectName: Short Project Description
+# 🚀 ProjectName: Short Project Description
 
 <a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv-2502.06606-b31b1b.svg" height=22.5></a>
 <a href="https://colab.research.google.com/"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
@@ -10,13 +10,13 @@
 
 ![image](docs/teaser.JPG)
 
-## Updates
+## 📢 Updates
 
 - [DD/MM/YYYY] 🎉 Initial release of ProjectName.
 - [DD/MM/YYYY] 🚀 Added feature X.
 - [DD/MM/YYYY] 📄 Paper accepted at [Conference/Journal].
 
-## Prerequisites
+## ⚙️ Prerequisites
 
 To run our method, please ensure you meet the following hardware and software requirements:
 - **Operating System**: Linux / macOS / Windows
@@ -28,7 +28,7 @@ To run our method, please ensure you meet the following hardware and software re
 - Others: requirements.txt
 
 
-## Setup
+## 🔧 Setup
 
 * Clone repository:
 ```bash
@@ -48,7 +48,7 @@ git lfs install
 git clone https://huggingface.co/YourModel/Weights
 ```
 
-## Inference / Usage
+## 🚀 Inference / Usage
 ```bash
 python main.py --param1 value1 --param2 value2
 ```
@@ -69,7 +69,7 @@ python main.py --input_path ./examples/input.png \
 --config ./configs/default.yaml
 ```
 
-## Quickstart
+## ⚡ Quickstart
 
 We provide examples of applying our pipeline to real image editing in the [notebook](example_notebooks/material_transfer.ipynb).
 
@@ -77,14 +77,14 @@ We provide examples of applying our pipeline to real image editing in the [noteb
 - Pretrained models & sample datasets available [here](example_notebooks/material_transfer.ipynb)
 
 
-## Method Diagram
+## 📊 Method Diagram
 <p align="center">
   <img src="docs/pipeline.png" alt="Diagram"/>
   <br>
 </p>
 <p align="center">
   <br>
-The overall pipeline of MaterialFusion for material transfer. Starting with DDIM inversion of the target image $x_{init}$ and material exemplar $y_{im}$, the framework combines the IP-Adapter with UNet and employs a guider energy function for precise material transfer. A dual-masking strategy ensures material application only on target regions while preserving background consistency, ultimately generating the edited output $x_{edit}$. The parameter $\lambda$, known as the Material Transfer Force, controls the intensity of the material application, enabling adjustment of the transfer effect according to user preference.
+Short explanation of pipeline / methodology.
 </p>
 
 ## References & Acknowledgments
