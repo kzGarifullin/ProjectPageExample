@@ -53,14 +53,14 @@ git clone https://huggingface.co/YourModel/Weights
 python main.py --param1 value1 --param2 value2
 ```
 
-### Key Parameters
+**Key Parameters**
 
  - `input_path`: Path to input image/data
  - `output_path`: Directory to save results
  - `prompt`: Text description for generation/editing
  - `config`: Path to config file (e.g., configs/default.yaml)
 
-### Example command:
+**Example command:**
 
 ```bash
 python main.py --input_path ./examples/input.png \
