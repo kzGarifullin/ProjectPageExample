@@ -1,11 +1,12 @@
-# YourProjectName: YourProjectName Description
+# ProjectName: Short Project Description
 
 <a href="https://arxiv.org/"><img src="https://img.shields.io/badge/arXiv-2502.06606-b31b1b.svg" height=22.5></a>
 <a href="https://colab.research.google.com/"><img src="https://colab.research.google.com/assets/colab-badge.svg" height=22.5></a>
 [![License](https://img.shields.io/github/license/AIRI-Institute/al_toolbox)](./LICENSE)
 
 
->Abstract of your project
+>Abstract / High-level summary of your project.
+Provide a concise overview of your project, summarizing the problem it addresses, the methodology employed, and its key contributions in 2–3 sentences. You may use text from the corresponding article if applicable.
 >
 
 ![image](docs/teaser.JPG)
