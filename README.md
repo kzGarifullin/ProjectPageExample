@@ -71,8 +71,6 @@ python main.py --input_path ./examples/input.png \
 
 ## ⚡ Quickstart
 
-We provide examples of applying our pipeline to real image editing in the [notebook](example_notebooks/material_transfer.ipynb).
-
 - Example Jupyter Notebook: [examples/demo.ipynb](example_notebooks/material_transfer.ipynb)
 - Pretrained models & sample datasets available [here](example_notebooks/material_transfer.ipynb)
 
@@ -87,18 +85,18 @@ We provide examples of applying our pipeline to real image editing in the [noteb
 Short explanation of pipeline / methodology.
 </p>
 
-## References & Acknowledgments
-
-The repository was started from [Guide-and-Rescale](https://github.com/AIRI-Institute/Guide-and-Rescale).
+## 🙏 References & Acknowledgments
+- Based on [BaseRepoName](https://github.com/ControlGenAI/MaterialFusion).
+- Thanks to [Collaborators/Institutes].
 
 ## Citation
 
 If you utilize this code in your research, kindly cite our paper:
 ```
-@article{garifullin2025materialfusion,
-  title={MaterialFusion: High-Quality, Zero-Shot, and Controllable Material Transfer with Diffusion Models},
-  author={Kamil Garifullin and Maxim Nikolaev and Andrey Kuznetsov and Aibek Alanov},
-  journal={arXiv preprint arXiv:2502.06606},
- year={2025}
+@article{your2025project,
+  title={ProjectName: Your Catchy Tagline},
+  author={Author One and Author Two},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2025}
 }
 ```
