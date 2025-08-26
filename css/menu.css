@@ -23,20 +23,20 @@
   #quick-access-menu a {
     display: block;
     padding: 5px 10px;
-    color: #007bff;
+    color:  #5ed6c3;
     text-decoration: none;
     font-size: 14px;
     transition: all 0.3s ease;
   }
   
   #quick-access-menu a:hover {
-    background-color: #007bff;
+    background-color:  #5ed6c3;
     color: white;
     border-radius: 5px;
   }
   
   #quick-access-menu a.active {
-    background-color: #007bff;
+    background-color:  #5ed6c3;
     color: white;
     border-radius: 5px;
   }
