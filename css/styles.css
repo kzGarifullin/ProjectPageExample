@@ -279,6 +279,10 @@ color: #444;
 transition: all 0.3s ease;
 border-radius: 10px;
 padding: 15px 10px;
+color: #2fbead;
+}
+.custom-nav-link h4 {
+    color: #2fbead;  /* Explicitly setting the h4 color */
 }
 .custom-nav-link:hover {
 background-color: #E0E0E0;
