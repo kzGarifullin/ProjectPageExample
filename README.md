@@ -92,7 +92,7 @@ Short explanation of pipeline / methodology.
 
 ## Citation
 
-If you utilize this code in your research, kindly cite our paper:
+If you utilize this code in your research, kindly cite our paper::
 ```
 @article{your2025project,
   title={ProjectName: Your Catchy Tagline},
